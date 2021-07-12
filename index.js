@@ -18,3 +18,13 @@ For example, using figures in July 2008:
   - (2.00 – 1.56) / 1.56 = 28%
   - the pound was thus overvalued against the dollar by 28%
 */
+
+// Big Mac Index by the example above
+const basePrice = 3.57; //USD
+const priceGBP = 2.29;
+let ppp = basePrice / priceGBP; // here ppp - purchasing power parity
+
+let actualExchangeRateGBP = 2;
+let valueGBP =
+  ((actualExchangeRateGBP - ppp.toFixed(2)) / ppp.toFixed(2)) * 100; // percents
+console.log(parseInt(valueGBP));
