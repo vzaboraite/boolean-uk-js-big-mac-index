@@ -28,6 +28,9 @@ const valueGBP =
   ((actualExchangeRateGBP - ippGBP.toFixed(2)) / ippGBP.toFixed(2)) * 100; // percents
 console.log(valueGBP.toFixed() + "%"); // 28%
 
+console.log(
+  "Big Mac Indices of 5 countries compared to US Big Mac price of $5.66:"
+);
 // Big Mac Index of 5 other countries today
 const basePriceUSD = 5.66;
 
@@ -77,3 +80,21 @@ const valueNOK =
   ((actualCurrencyExchangeRateNOK - ippNOK.toFixed(2)) / ippNOK.toFixed(2)) *
   100;
 console.log(valueNOK.toFixed() + "%"); // 0%
+
+//Challenge 1:
+console.log("Compared indices: ");
+console.log("Is first index is greater than next one?");
+console.log("Countries compared: Lithuania and United Kingdom");
+console.log(valueLTEur > valueUKGBP);
+
+console.log("Countries compared: United Kingdom and Switzerland");
+console.log(valueUKGBP > valueCHF);
+
+console.log("Countries compared: Switzerland and Ukraine");
+console.log(valueCHF > valueUAH);
+
+console.log("Countries compared: Ukraine and Norway");
+console.log(valueUAH > valueNOK);
+
+console.log("Countries compared: Norway and Lithuania");
+console.log(valueNOK > valueLTEur);
