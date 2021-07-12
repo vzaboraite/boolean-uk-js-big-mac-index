@@ -98,3 +98,100 @@ console.log(valueUAH > valueNOK);
 
 console.log("Countries compared: Norway and Lithuania");
 console.log(valueNOK > valueLTEur);
+
+// Challenge 2:
+
+// LT output
+if (valueLTEur === 0) {
+  console.log(
+    "The index in Lithuania has the same or similar value as dollar in the US!"
+  );
+} else if (valueLTEur > 0) {
+  console.log(
+    "The euro in Lithuania was overvalued against the dollar in the US by " +
+      valueLTEur.toFixed() +
+      "%."
+  );
+} else {
+  console.log(
+    "The euro in Lithuania was undervalued against the dollar in the US by " +
+      valueLTEur.toFixed() +
+      "%."
+  );
+}
+
+// UK output
+if (valueUKGBP === 0) {
+  console.log(
+    "The index in United Kingdom has the same or similar value as dollar in the US!"
+  );
+} else if (valueUKGBP > 0) {
+  console.log(
+    "The pound in United Kingdom was overvalued against the dollar in the US by " +
+      valueUKGBP.toFixed() +
+      "%."
+  );
+} else {
+  console.log(
+    "The pound in United Kingdom was undervalued against the dollar in the US by " +
+      valueUKGBP.toFixed() +
+      "%."
+  );
+}
+
+// Switzerland output
+if (valueCHF === 0) {
+  console.log(
+    "The index in Switzerland has the same or similar value as dollar in the US!"
+  );
+} else if (valueCHF > 0) {
+  console.log(
+    "The frank in Switzerland was overvalued against the dollar in the US by " +
+      valueCHF.toFixed() +
+      "%."
+  );
+} else {
+  console.log(
+    "The frank in Switzerland was undervalued against the dollar in the US by " +
+      valueCHF.toFixed() +
+      "%."
+  );
+}
+
+// Ukraine output
+if (valueUAH === 0) {
+  console.log(
+    "The index in Ukraine has the same or similar value as dollar in the US!"
+  );
+} else if (valueUAH > 0) {
+  console.log(
+    "The hryvnia in Ukraine was overvalued against the dollar in the US by " +
+      valueUAH.toFixed() +
+      "%."
+  );
+} else {
+  console.log(
+    "The hryvnia in Ukraine was undervalued against the dollar in the US by " +
+      valueUAH.toFixed() +
+      "%."
+  );
+}
+
+// Norway output
+if (valueNOK === 0) {
+  console.log(
+    "The index in Norway has the same or similar value as dollar in the US!"
+  );
+} else if (valueNOK > 0) {
+  console.log(
+    "The krone in Norway was overvalued against the dollar in the US by " +
+      valueNOK.toFixed() +
+      "%."
+  );
+} else {
+  console.log(
+    "The krone in Norway was undervalued against the dollar in the US by " +
+      valueNOK.toFixed() +
+      "%."
+  );
+}
